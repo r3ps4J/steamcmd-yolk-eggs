@@ -4,7 +4,7 @@
         "version": "PTDL_v2",
         "update_url": null
     },
-    "exported_at": "2024-12-23T14:14:14+01:00",
+    "exported_at": "2024-12-23T14:37:10+01:00",
     "name": "ARK: Survival Ascended",
     "author": "info@r3ps4j.nl",
     "description": "ARK is reimagined from the ground-up into the next-generation of video game technology with Unreal Engine 5! Form a tribe, tame & breed hundreds of unique dinosaurs and primeval creatures, explore, craft, build, and fight your way to the top of the food-chain. Your new world awaits!",
@@ -168,6 +168,16 @@
             "user_viewable": true,
             "user_editable": true,
             "rules": "nullable|string|max:512",
+            "field_type": "text"
+        },
+        {
+            "name": "ARM64 Device",
+            "description": "Which build variant of Box64 to use. Only used when server is running on ARM. See https:\/\/github.com\/sonroyaalmerol\/steamcmd-arm64#box64-builds for more info. Default: generic",
+            "env_variable": "ARM64_DEVICE",
+            "default_value": "generic",
+            "user_viewable": true,
+            "user_editable": false,
+            "rules": "required|in:generic,rpi3,rpi4,rpi4-pre3,rpi5,rpi5-16k,rk3588,m1,adlink",
             "field_type": "text"
         }
     ]
